@@ -23,7 +23,8 @@ export default {
     addUser() {
       let username = this.username,
           age = this.age;
-      
+      this.username = "";
+      this.age = "";
       this.$emit('add-user', username, age);
     }
   }
